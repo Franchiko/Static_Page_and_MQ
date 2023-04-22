@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Schibsted Grotesk", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(100, 116, 139),
+    rgb(254, 249, 195)
+  );
+}
+
+h1 {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px rgb(221, 155, 79), 0 0 25px rgb(0, 204, 255),
+    0 0 3px rgb(85, 127, 190);
+}
+
+p {
+  padding-top: 1rem;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 1px 1px black, 0 0 25px rgb(0, 204, 255),
+    0 0 5px rgb(85, 127, 190);
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.4rem;
+}
+
+.column img {
+  margin: 0.9rem;
+  vertical-align: middle;
+}
+
+.column img:hover {
+  -webkit-box-reflect: right;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
